@@ -1,0 +1,94 @@
+/* google lamak çok önemli arkadaşlar 2019 da yazılıma başladığımda amacım konsept
+öğrenmekti. yani bir navbar nasıl yapılmalıdır, iskelet mantığı nedir, bu yazılımcılar
+ fronted developer lar nasıl bir mantık güdüyorlar, diye bu konseptleri öğrendikten sonra,
+ buna ihtiyaç olarak flex kullanıyorlarmış gibi bilgileri öğrendikten snra artık flex öğrenmek
+ benim için bir araç, amacım fronted developer lar bu ürünleri nasıl çıkarıyorlar. benim bu ürünü 
+ ortaya çıkarmak için neye ihtiyacım var diye düşündükten snra artık araştırmaya başlayabilirim.
+ ÖZETLE KONSEPT ÖĞRENİN ARKADAŞLAR */
+*{ /* RESET CSS */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} /* RESET CSS */
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.headerWrapper{
+    width: 100%;
+    height: 75px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: black;
+}
+
+.headerLeftWrapper{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navUl{
+    display: flex;
+    gap: 20px;
+}
+
+.headerRightWrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.navItem{
+    transition: all 0.3s ease-in-out;/* transition etiketlerini inceleyin inernetten scale büyütür misal */
+
+}
+
+.navItem:hover{
+    transform: scale(1.2); /* transform etiketlerini inceleyin inernetten scale büyütür misal */  
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+#loginBtn{
+    background-color: gainsboro;
+    color: black;
+    transition: all 0.3s linear; /* transition "hover" a değil elementin kendisine verin */
+}
+#loginBtn:hover{
+    background-color: gray; /* transition buraya yani "hover"a değil */
+}
+
+#registerBtn{
+    background-color: orangered;
+    transition: all 0.3s linear;
+}
+#registerBtn:hover{
+    background-color: gray;
+    color: black;
+}
+
+.logo{
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.logo:hover{
+    cursor: no-drop
+}
